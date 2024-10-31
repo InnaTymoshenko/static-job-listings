@@ -15,6 +15,6 @@ body {
 
 @layer components {
 	.shell {
-		@apply container w-full lg:max-w-[1440px] sx:max-w-[600px] min-h-[100dvh] flex flex-col justify-center gap-8 pb-8 pt-6 md:py-8;
+		@apply container w-full lg:max-w-[1440px] sx:max-w-[600px] min-h-[100dvh] flex flex-col justify-start gap-8 pb-8 pt-12;
 	}
 }

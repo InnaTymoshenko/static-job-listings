@@ -35,7 +35,7 @@ const config: Config = {
 			us: ['10px', '12px'],
 			sm: ['12px', '16px'],
 			md: ['14px', '20px'],
-			lg: ['17px', '24px'],
+			lg: ['16px', '24px'],
 			xl: ['20px', '28px'],
 			'2xl': ['28px', '36px'],
 			'3xl': ['34px', '46px'],
@@ -75,6 +75,7 @@ const config: Config = {
 				mobile: "url(''/images/bg-header-mobile.svg')"
 			},
 			boxShadow: {
+				sm: '0 30px 30px -22px #5ba4a44d',
 				'3xl': '0px 0px 10px 80px hsl(0, 0.4%, 54%, 36%)'
 			}
 		}
