@@ -15,6 +15,10 @@ body {
 
 @layer components {
 	.shell {
-		@apply container w-full lg:max-w-[1440px] sx:max-w-[600px] min-h-[100dvh] flex flex-col justify-start gap-8 pb-8 pt-12;
+		@apply container w-full lg:max-w-[1440px] sx:max-w-[600px] min-h-[100dvh] flex flex-col justify-start gap-8 pb-8 pt-20;
+	}
+
+	.tools {
+		@apply text-cyan-200 text-lg font-semibold p-2 bg-cyan-50 border-none rounded-sm inline-block m-2 cursor-pointer hover:bg-cyan-200 hover:text-white;
 	}
 }
