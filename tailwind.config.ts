@@ -38,10 +38,7 @@ const config: Config = {
 			lg: ['16px', '24px'],
 			xl: ['20px', '28px'],
 			'2xl': ['22px', '30px'],
-			'3xl': ['34px', '46px'],
-			'3.5xl': ['5rem', '6rem'],
-			'4xl': ['6rem', '8rem'],
-			'5xl': ['8rem', '10rem']
+			'3xl': ['32px', '40px']
 		},
 		colors: {
 			transparent: 'hsl(0,0%,100%,0%)',

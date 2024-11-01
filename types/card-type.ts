@@ -13,3 +13,10 @@ export interface ICard {
 	languages: string[]
 	tools: string[]
 }
+
+export interface IFilterCard {
+	role: string
+	level: string
+	tools: string[]
+	languages: string[]
+}
