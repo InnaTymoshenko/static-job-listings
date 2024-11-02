@@ -7,7 +7,7 @@ export const Header = () => {
 	const screenSize = useScreenSize()
 
 	return (
-		<div className="w-full  sx:h-40 bg-cyan-200 ">
+		<header className="w-full  sx:h-40 bg-cyan-200 ">
 			{screenSize === SCREEN_SIZES.MOBILE ? (
 				<img
 					src="/images/bg-header-mobile.svg"
@@ -21,6 +21,6 @@ export const Header = () => {
 					className="w-full h-full object-cover object-center mix-blend-lighten"
 				/>
 			)}
-		</div>
+		</header>
 	)
 }

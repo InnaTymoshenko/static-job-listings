@@ -8,9 +8,9 @@ export interface ShellProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const Shell = forwardRef<HTMLDivElement, ShellProps>(({ className, children, ...props }, ref) => {
 	return (
-		<div ref={ref} className={className} {...props}>
+		<main ref={ref} className={className} {...props}>
 			{children}
-		</div>
+		</main>
 	)
 })
 

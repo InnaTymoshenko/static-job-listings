@@ -79,13 +79,12 @@ export default function Home() {
 		<div className="w-full h-screen bg-cyan-50 font-[family-name:var(--font-league-spartan)]">
 			<Header />
 			<Shell className={'shell'}>
-				<div className="w-full min-h-8 relative">
+				<section className="w-full min-h-8 relative">
 					{isFilterFilled ? (
 						<JobFilter filter={filter} removeFilter={removeFilter} handleClearFilter={handleClearFilter} />
 					) : null}
-				</div>
-
-				<div
+				</section>
+				<section
 					className={`w-full relative flex flex-col justify-start lg:gap-8 sx:gap-16 lg:mt-6 ${
 						isFilterFilled ? 'sx:mt-24' : 'sx:mt-12'
 					}`}
@@ -93,7 +92,7 @@ export default function Home() {
 					{filteredData?.map((data, index) => (
 						<JobCard key={index} data={data} addFilter={addFilter} />
 					))}
-				</div>
+				</section>
 			</Shell>
 		</div>
 	)
