@@ -85,7 +85,7 @@ export default function Home() {
 					) : null}
 				</section>
 				<section
-					className={`w-full max-w-[1110px] relative flex flex-col justify-start lg:gap-8 sx:gap-16 lg:mt-6 ${
+					className={`w-full max-w-[1110px] relative flex flex-col justify-start lg:gap-6 sx:gap-16 lg:mt-6 ${
 						isFilterFilled ? 'sx:mt-24' : 'sx:mt-12'
 					}`}
 				>

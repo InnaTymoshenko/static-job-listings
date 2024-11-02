@@ -15,7 +15,7 @@ body {
 
 @layer components {
 	.shell {
-		@apply container w-full lg:max-w-[1440px] sx:max-w-[600px] min-h-[100dvh] pb-8 pt-10;
+		@apply container w-full lg:max-w-[1440px] sx:max-w-[600px] min-h-[100dvh] py-8;
 	}
 
 	.tools {
