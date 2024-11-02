@@ -78,14 +78,14 @@ export default function Home() {
 	return (
 		<div className="w-full h-screen bg-cyan-50 font-[family-name:var(--font-league-spartan)]">
 			<Header />
-			<Shell className={'shell'}>
-				<section className="w-full min-h-8 relative">
+			<Shell className={'shell flex flex-col justify-start items-center'}>
+				<section className="w-full max-w-[1110px] min-h-8 relative">
 					{isFilterFilled ? (
 						<JobFilter filter={filter} removeFilter={removeFilter} handleClearFilter={handleClearFilter} />
 					) : null}
 				</section>
 				<section
-					className={`w-full relative flex flex-col justify-start lg:gap-8 sx:gap-16 lg:mt-6 ${
+					className={`w-full max-w-[1110px] relative flex flex-col justify-start lg:gap-8 sx:gap-16 lg:mt-6 ${
 						isFilterFilled ? 'sx:mt-24' : 'sx:mt-12'
 					}`}
 				>

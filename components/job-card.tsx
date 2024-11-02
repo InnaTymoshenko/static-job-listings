@@ -12,7 +12,7 @@ type JobCardProps = {
 export const JobCard = ({ data, addFilter }: JobCardProps) => {
 	return (
 		<Card
-			className={`flex lg:flex-row sx:flex-col relative justify-between items-center bg-white px-6 py-3 border-l-[6px]  ${
+			className={`flex lg:flex-row sx:flex-col relative justify-between items-center bg-white px-6 py-2 border-l-[6px]  ${
 				data.featured ? 'border-l-cyan-200' : 'border-transparent'
 			}`}
 		>
