@@ -15,13 +15,13 @@ export const JobFilter = ({ filter, removeFilter, handleClearFilter }: JobFilter
 				{filter.role && (
 					<div className="flex flex-wrap justify-start items-center gap-4">
 						<span className="text-cyan-200 p-2 text-lg font-semibold">{filter.role}</span>
-						<Button removeFilter={() => removeFilter('role', filter.role)} />
+						<Button onClick={() => removeFilter('role', filter.role)} />
 					</div>
 				)}
 				{filter.level && (
 					<div className=" min-w-6 h-6 flex justify-between items-center gap-2 bg-cyan-50 border-none rounded-sm  overflow-hidden">
 						<span className="text-cyan-200 p-2 text-lg font-semibold">{filter.level}</span>
-						<Button removeFilter={() => removeFilter('level', filter.level)} />
+						<Button onClick={() => removeFilter('level', filter.level)} />
 					</div>
 				)}
 				{filter.languages &&
@@ -31,7 +31,7 @@ export const JobFilter = ({ filter, removeFilter, handleClearFilter }: JobFilter
 							className=" min-w-6 h-6 flex justify-between items-center gap-2 bg-cyan-50 border-none rounded-sm  overflow-hidden"
 						>
 							<span className="text-cyan-200 p-2 text-lg font-semibold">{l}</span>
-							<Button removeFilter={() => removeFilter('languages', l)} />
+							<Button onClick={() => removeFilter('languages', l)} />
 						</div>
 					))}
 				{filter.tools &&
@@ -41,7 +41,7 @@ export const JobFilter = ({ filter, removeFilter, handleClearFilter }: JobFilter
 							className=" min-w-6 h-6 flex justify-between items-center gap-2 bg-cyan-50 border-none rounded-sm  overflow-hidden"
 						>
 							<span className="text-cyan-200 p-2 text-lg font-semibold">{t}</span>
-							<Button removeFilter={() => removeFilter('tools', t)} />
+							<Button onClick={() => removeFilter('tools', t)} />
 						</div>
 					))}
 			</div>
